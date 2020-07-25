@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+		<div class="row">
+			<div class="intro col-12">
+				<h1>TODO APPLICATION</h1>
+				<div>
+					<div class="border1"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<input id="todo-item" type="text" placeholder="New item..." maxlength="27">
+				<button id="enter" onclick="addTodo()"  onclick="remove()">ADD ITEMS</button>
+				<button id="deleteAll" onclick="deleteALL()" onclick="remove()">DELETE ALL</button>
+			</div>
+		</div>
+
+		<!-- Empty List -->
+		<div class="row">
+			<div class="listItems col-12">
+				<ul class="col-12 offset-0 col-sm-8 offset-sm-2" id="list">
+
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
